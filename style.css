@@ -1,0 +1,231 @@
+:root {
+  --pastel-blue-light: #d4eaf1;
+  --pastel-blue: #a8d5e2;
+  --pastel-blue-dark: #6ea9b5;
+  --white: #f0f0f0;
+  --grey: #d3d3d3;
+  --black: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--pastel-blue);
+  color: var(--black);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--pastel-blue);
+}
+
+.form-button {
+  margin: 10px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--pastel-blue-dark);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: var(--pastel-blue);
+}
+
+.form-link {
+  color: var(--pastel-blue-dark);
+  cursor: pointer;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+.rule-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.rule-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rule-item {
+  background-color: var(--pastel-blue-light);
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.rule-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--pastel-blue-dark);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rule-button:hover {
+  background-color: var(--pastel-blue);
+}
+
+.timer-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--pastel-blue-dark);
+  margin-bottom: 20px;
+}
+
+.question-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.answer-option {
+  background-color: var(--white);
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.answer-option:hover {
+  background-color: var(--pastel-blue-light);
+  border-color: var(--pastel-blue);
+}
+
+.question-progress {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--grey);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.question-progress::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: var(--pastel-blue-dark);
+  width: 0;
+  transition: width 0.3s;
+}
+
+.submit-button {
+  margin: 20px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--pastel-blue-dark);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--pastel-blue);
+}
+
+.fail-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.fail-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--pastel-blue-dark);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fail-button:hover {
+  background-color: var(--pastel-blue);
+}
+
+.result-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.result-point {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--pastel-blue-dark);
+  margin-bottom: 20px;
+}
+
+.result-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--pastel-blue-dark);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.result-button:hover {
+  background-color: var(--pastel-blue);
+}
